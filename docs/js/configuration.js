@@ -5,7 +5,6 @@ var map = new mapboxgl.Map({
 	style: 'mapbox://styles/bbl-marcom/ck946gnid0ove1ip2iu54j1kj', // stylesheet location
 	center: [2.3513582028069493, 48.85853712681944], // paris starting position [lng, lat]
 	zoom: 4.8, // starting zoom
-
 	attributionControl: false
 });
 
@@ -31,7 +30,7 @@ function clusterLayers() {
 			'circle-opacity': ["interpolate", ["linear"], ["zoom"], 14.9, 0.7, 15, 0.0],
 			'circle-stroke-opacity': ["interpolate", ["linear"], ["zoom"], 15.9, 0.7, 16, 0.0],
 			'circle-stroke-color': '#000000',
-			'circle-radius': 40
+			'circle-radius': 28
 		}
 	});
 
@@ -46,12 +45,9 @@ function clusterLayers() {
 		},
 
 		'layout': {
-
-
 			'text-field': '{point_count_abbreviated}',
 			'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
 			'text-size': 14,
-
 		}
 	});
 
@@ -63,7 +59,7 @@ function clusterLayers() {
 		'paint': {
 			'circle-color': '#00ff66',
 			'circle-blur': 0.3,
-			'circle-radius': 40,
+			'circle-radius': 28,
 			'circle-opacity': ["interpolate", ["linear"], ["zoom"], 14.9, 0.7, 15, 0.0],
 			'circle-stroke-width': 0,
 			'circle-stroke-opacity': ["interpolate", ["linear"], ["zoom"], 15.9, 0.7, 16, 0.0],
@@ -82,17 +78,12 @@ function clusterLayers() {
 			'text-halo-width': 0.8,
 			'text-halo-color': '#fff',
 			'text-opacity': ["interpolate", ["linear"], ["zoom"], 14.9, 0.7, 15, 0.0],
-
 		},
 
 		'layout': {
-
-
 			'text-field': '1',
 			'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
 			'text-size': 14,
-
-
 		}
 	});
 }
