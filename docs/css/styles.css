@@ -682,22 +682,6 @@ table, th, td {
 }
 
 @media only screen and (max-width: 760px) {
-	a.mapboxgl-ctrl-logo {
-		left: 0px;
-		bottom: 168px;
-		position: fixed;
-	}
-}
-
-@media only screen and (max-width: 760px) {
-	.mapboxgl-ctrl-logo {
-		left: 0px;
-		bottom: 168px;
-		position: fixed;
-	}
-}
-
-@media only screen and (max-width: 760px) {
 	.mapboxgl-ctrl-scale {
 		bottom: 168px;
 		right: 0px;
