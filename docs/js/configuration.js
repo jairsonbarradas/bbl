@@ -8,7 +8,7 @@ var map = new mapboxgl.Map({
 	attributionControl: true
 });
 
-// code à intégrer ci-dessous 
+// code à intégrer ci-dessous pour la création des clusters
 map.on('load', function () {
 	map.addSource('localisations', {
 		'type': 'geojson',
